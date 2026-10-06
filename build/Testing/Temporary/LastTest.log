@@ -1,0 +1,48 @@
+Start testing: Oct 03 12:29 CST
+----------------------------------------------------------
+1/1 Testing: octree_tests
+1/1 Test: octree_tests
+Command: "/mnt2/zjh/code/Goleta/session_72/a/build/test_octree"
+Directory: /mnt2/zjh/code/Goleta/session_72/a/build
+"octree_tests" start time: Oct 03 12:29 CST
+Output:
+----------------------------------------------------------
+[PASS] random: size                       accuracy: 1/1 (100.00%)
+[PASS] random: range query                accuracy: 200/200 (100.00%)
+[PASS] random: radius search              accuracy: 200/200 (100.00%)
+[PASS] random: nearest neighbor           accuracy: 200/200 (100.00%)
+[PASS] boundary: full-box query           accuracy: 1/1 (100.00%)
+[PASS] boundary: split-plane box          accuracy: 1/1 (100.00%)
+[PASS] boundary: zero-size box            accuracy: 1/1 (100.00%)
+[PASS] boundary: zero radius              accuracy: 1/1 (100.00%)
+[PASS] boundary: tangent sphere           accuracy: 1/1 (100.00%)
+[PASS] duplicates: size                   accuracy: 1/1 (100.00%)
+[PASS] duplicates: range keeps all copies accuracy: 1/1 (100.00%)
+[PASS] duplicates: radius keeps all copies accuracy: 1/1 (100.00%)
+[PASS] duplicates: nearest is the duplicate accuracy: 1/1 (100.00%)
+[PASS] empty: range query empty           accuracy: 1/1 (100.00%)
+[PASS] empty: radius search empty         accuracy: 1/1 (100.00%)
+[PASS] empty: nearest returns false       accuracy: 1/1 (100.00%)
+[PASS] empty: size is zero                accuracy: 1/1 (100.00%)
+[PASS] depth-limit: radius search         accuracy: 100/100 (100.00%)
+[PASS] depth-limit: nearest neighbor      accuracy: 100/100 (100.00%)
+[PASS] persist: save succeeds             accuracy: 1/1 (100.00%)
+[PASS] persist: load succeeds             accuracy: 1/1 (100.00%)
+[PASS] persist: size matches              accuracy: 1/1 (100.00%)
+[PASS] persist: range identical after load accuracy: 100/100 (100.00%)
+[PASS] persist: radius identical after load accuracy: 100/100 (100.00%)
+[PASS] persist: nearest identical after load accuracy: 100/100 (100.00%)
+[PASS] persist: reject invalid file       accuracy: 1/1 (100.00%)
+[PASS] far: nearest among 3               accuracy: 1/1 (100.00%)
+[PASS] far: range finds all 3             accuracy: 1/1 (100.00%)
+
+==== summary: 28/28 test groups passed (100.00%) ====
+<end of output>
+Test time =   0.49 sec
+----------------------------------------------------------
+Test Passed.
+"octree_tests" end time: Oct 03 12:29 CST
+"octree_tests" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Oct 03 12:29 CST
