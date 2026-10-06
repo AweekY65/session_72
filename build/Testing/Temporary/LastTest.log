@@ -1,0 +1,59 @@
+Start testing: Oct 02 21:15 CST
+----------------------------------------------------------
+1/1 Testing: octree_tests
+1/1 Test: octree_tests
+Command: "/mnt2/zjh/code/Goleta/session_72/b/build/test_octree"
+Directory: /mnt2/zjh/code/Goleta/session_72/b/build
+"octree_tests" start time: Oct 02 21:15 CST
+Output:
+----------------------------------------------------------
+==== Octree test suite (brute-force verified) ====
+[test] random point cloud vs brute force
+  [PASS] insert count matches                         1/1  accuracy = 100.00%
+  [PASS] random range queries                         200/200  accuracy = 100.00%
+  [PASS] random radius searches                       200/200  accuracy = 100.00%
+  [PASS] random nearest neighbors                     500/500  accuracy = 100.00%
+[test] split-plane and boundary points
+  [PASS] all boundary points inserted                 1/1  accuracy = 100.00%
+  [PASS] full-range query returns all                 1/1  accuracy = 100.00%
+  [PASS] range on split plane (upper octant)          1/1  accuracy = 100.00%
+  [PASS] range on split plane (lower octant)          1/1  accuracy = 100.00%
+  [PASS] degenerate box query                         1/1  accuracy = 100.00%
+  [PASS] radius touches split-plane point             1/1  accuracy = 100.00%
+  [PASS] nearest of split-plane point is itself       1/1  accuracy = 100.00%
+[test] duplicate / coincident points
+  [PASS] duplicate insert count                       1/1  accuracy = 100.00%
+  [PASS] degenerate range returns every duplicate     1/1  accuracy = 100.00%
+  [PASS] full range keeps all duplicates              1/1  accuracy = 100.00%
+  [PASS] zero-radius search returns every duplicate   1/1  accuracy = 100.00%
+  [PASS] nearest among duplicates has distance 0      1/1  accuracy = 100.00%
+[test] empty tree
+  [PASS] tree starts empty                            1/1  accuracy = 100.00%
+  [PASS] range query on empty tree                    1/1  accuracy = 100.00%
+  [PASS] radius search on empty tree                  1/1  accuracy = 100.00%
+  [PASS] nearest neighbor on empty tree fails         1/1  accuracy = 100.00%
+  [PASS] insert outside root box rejected             1/1  accuracy = 100.00%
+  [PASS] rejected insert leaves tree empty            1/1  accuracy = 100.00%
+[test] max depth limit
+  [PASS] tree depth respects maxDepth                 1/1  accuracy = 100.00%
+  [PASS] all clustered points stored                  1/1  accuracy = 100.00%
+  [PASS] clustered radius searches                    50/50  accuracy = 100.00%
+  [PASS] nearest neighbor in deep cluster             1/1  accuracy = 100.00%
+[test] save / load consistency
+  [PASS] save succeeds                                1/1  accuracy = 100.00%
+  [PASS] load succeeds                                1/1  accuracy = 100.00%
+  [PASS] size preserved                               1/1  accuracy = 100.00%
+  [PASS] depth preserved                              1/1  accuracy = 100.00%
+  [PASS] range queries identical after reload         100/100  accuracy = 100.00%
+  [PASS] radius searches identical after reload       100/100  accuracy = 100.00%
+  [PASS] nearest neighbors identical after reload     200/200  accuracy = 100.00%
+==== summary: 33 checks, 0 failed, overall accuracy 100.00% ====
+<end of output>
+Test time =   0.05 sec
+----------------------------------------------------------
+Test Passed.
+"octree_tests" end time: Oct 02 21:15 CST
+"octree_tests" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Oct 02 21:15 CST

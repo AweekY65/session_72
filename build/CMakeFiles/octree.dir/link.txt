@@ -1,0 +1,2 @@
+/usr/bin/ar qc liboctree.a CMakeFiles/octree.dir/src/octree.cpp.o
+/usr/bin/ranlib liboctree.a
